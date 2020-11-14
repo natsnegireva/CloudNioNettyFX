@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="260.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginController">
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <children>
+
+                <TextField fx:id="tfLogin" alignment="BOTTOM_CENTER" prefHeight="42.0" prefWidth="384.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="15.0" />
+                    </font></TextField>
+
+
+                <PasswordField fx:id="tfPass" alignment="CENTER" prefHeight="53.0" prefWidth="384.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font></PasswordField>
+
+                <Label fx:id="lResponse" alignment="TOP_CENTER" prefHeight="40.0" prefWidth="356.0" text="Войдите по логину и паролю" textFill="#81bbe1" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" HBox.hgrow="ALWAYS">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="10.0" />
+                    </GridPane.margin></Label>
+
+                <BorderPane GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                    <center>
+                        <Button id="bLogin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="47.0" prefWidth="200.0" text="ВОЙТИ" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <BorderPane.margin>
+                                <Insets top="10.0" />
+                            </BorderPane.margin></Button>
+                    </center>
+                </BorderPane>
+            </children>
+            <GridPane.margin>
+                <Insets right="10.0" top="10.0" />
+            </GridPane.margin>
+            <rowConstraints>
+                <RowConstraints maxHeight="57.0" minHeight="42.0" prefHeight="49.0" />
+                <RowConstraints maxHeight="58.0" minHeight="41.0" prefHeight="49.0" />
+                <RowConstraints maxHeight="35.0" minHeight="22.0" prefHeight="22.0" />
+                <RowConstraints maxHeight="35.0" minHeight="22.0" prefHeight="22.0" />
+                <RowConstraints />
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+        </GridPane>
+    </center>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</BorderPane>
